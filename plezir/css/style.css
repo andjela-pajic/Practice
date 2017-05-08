@@ -1,0 +1,875 @@
+* {
+	box-sizing: border-box;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://fonts.gstatic.com/s/yanonekaffeesatz/v8/YDAoLskQQ5MOAgvHUQCcLXC6D0kQJsDujjG2hljaH8Y.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://fonts.gstatic.com/s/yanonekaffeesatz/v8/YDAoLskQQ5MOAgvHUQCcLTT528x_xPA2SV6ECmZXyQw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://fonts.gstatic.com/s/yanonekaffeesatz/v8/YDAoLskQQ5MOAgvHUQCcLV83L2yn_om9bG0a6EHWBso.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://fonts.gstatic.com/s/yanonekaffeesatz/v8/YDAoLskQQ5MOAgvHUQCcLfGwxTS8d1Q9KiDNCMKLFUM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNOAHFN6BivSraYkjhveRHY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGClYwVOhDRq2vbpGRTZ7bbs.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGFKFh1TDTPrUZWzVp6FtpG8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGDovqjS_dXPZszO_XltPdNg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGFxe-GPfKKFmiXaJ_Q0GFr8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGEo0As1BFRXtCDhS66znb_k.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGLpVETArfVi9McBbsQ4atuQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGEfh7q1GW6w7vv_rRnRqMrY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGHZhYM0_6AejPZE-OqA592o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM7YHq4FgHI02B8rPccK0FJQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM40tgx99jmYGv_xzYuwd1rU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMxgy2Fsj5sj3EzlXpqVXRKo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6CzM2XYAq8cDhaXsrN8WXcA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6OXKTZYPNtG1yMB_YJSqlic.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6GQKuzMuncr0JB710wa2dPI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6J-EY3txTwhUdSs_eHhDaJM.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6Kr3NmSntz3GE6rIpxOPZGY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6Nnl6YROR5rHLkdLoHwoOWA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Source Sans Pro Black Italic'), local('SourceSansPro-BlackIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6CibMF1hxOLo1b4zdIEBvuw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Source Sans Pro Black Italic'), local('SourceSansPro-BlackIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6H1Ah8-D2WXjE_RNgU-I6-c.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Source Sans Pro Black Italic'), local('SourceSansPro-BlackIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6Kixy-5gtMP3-zP8S1pobIg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+	/*fonts*/
+
+body {
+	background: url('http://plezirmagazin.net/wp-content/uploads/2014/12/Death_to_Stock_Tactile_7.jpg') no-repeat;
+	background-position: top right;
+  background-attachment: fixed;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 30px;
+  word-wrap: break-word;
+  color: #2a2a2a;
+}
+
+body, a, p, ul, li, h1, h4, h6 {
+	margin:0;
+	padding:0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	width:1080px;
+	margin:0 auto;
+}
+
+.margin-top {
+	margin-top: 20px;
+}
+
+.first-part .aktuelno {
+	font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #fff;
+  background: #787878;
+  display: inline-block;
+  margin-right: 50px;
+  padding: 0 12px;
+}
+
+.first-part {
+	background-color: black;
+	height:50px;
+}
+
+.first-part a {
+	color: #b6b7b9;
+}
+
+.first-part a:hover {
+	color:red;
+}
+
+.first-part .social-network {
+	float: right;
+	margin:8px 5px 8px 0;
+}
+
+.first-part .social-network  li {
+	display:inline-block;
+	position: relative;
+	padding:0 5px;
+}
+
+.first-part .social-network strong {
+	font-weight: normal;
+  position: absolute;
+  right: 20px;
+  top: -1px;
+  color: #fff;
+  opacity: 0;
+  padding: 3px;
+  z-index: 9999;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.first-part .social-network a {
+  padding: 0 5px;
+}
+
+.first-part .social-network .face:hover strong,
+.first-part .social-network .twitt:hover strong,
+.first-part .social-network .insta:hover strong,
+.first-part .social-network .google:hover strong,
+.first-part .social-network .youtube:hover strong,
+.first-part .social-network .gmail:hover strong {
+	opacity: 1;
+  -webkit-transition-property: opacity, top;
+  bottom:5px;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-property: opacity, top;
+  -moz-transition-duration: 300ms;
+}
+
+.second-part {
+	background-color: white;
+	height:180px;
+}
+
+.second-part .logo {
+	width: 240px;
+  height: 150px;
+  margin:10px 0;
+  float:left;
+}
+
+.second-part .girl {
+	float:right;
+	margin:20px 26px 10px 0;
+}
+
+.second-part .girl img {
+	height:125px;
+}
+
+.navbar {
+	background-color: black;
+	text-transform: uppercase;
+	padding: 20px 20px 20px 0;
+}
+
+.navbar a {
+  color: white;
+  padding: 19px;
+  font-family:"Source Sans Pro", sans-serif;
+  font-size:24px;
+  line-height:28px;
+  vertical-align: middle;
+}
+
+.navbar a:hover {
+  background-color:rgb(120, 120, 120);
+  transition:0.5s;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar .navinside {
+  opacity: 0;
+  background-color: white;
+  position: absolute;
+  width: 135px;
+  top:319px;
+}
+
+.navbar .hoverli:hover .navinside,
+.navbar .hoverli2:hover .navinside,
+.navbar .hoverli3:hover .navinside {
+  opacity: 1;
+  background-color: white;
+  position: absolute;
+  width: 135px;
+  top:319px;
+}
+
+.navbar .navinside li {
+  display: block;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+  z-index: 2;
+  float: none; 
+}
+
+.navbar .navinside a {
+  font-size: 14px;
+  background-color: white;
+  display: block;
+  padding:3px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  padding-left: 20px;
+  width: 135px;
+}
+
+.navbar .navinside .fa {
+  color:black;
+}
+
+.navbar .navinside li:hover {
+  opacity: 1;
+  background-color: white;
+}
+
+.navbar .navinside a:hover,
+.navbar .navinside .fa:hover  {
+  color:red;
+  background-color: white;
+}
+
+.navbar .selected {
+	background-color: rgb(120, 120, 120);
+}
+
+.container {
+	background-color: white;
+	padding:20px 26px 0 26px;
+}
+
+.container .ecology-section .freaky {
+	height:350px;
+	overflow: hidden;
+	position: relative;
+}
+
+.container .ecology-section .freaky img {
+	width: 100%;
+}
+
+.container .ecology-section .freaky .ecology {
+	top:270px;
+	left:460px;
+}
+
+.container .ecology-section .freaky .ecology a,
+.container .design-section .japanese .design a,
+.container .fashion-section .water .fashion a,
+.ostalo .life-style .button a {
+	color:white;
+}
+
+.container .design-section {
+	margin-right: 36px;
+}
+
+.container .design-section,
+ .container .fashion-section {
+	width:48%;
+	position: relative;
+	margin-top: 26px;
+	display: inline-block;
+}
+
+.container .design-section .japanese img,
+.container .fashion-section .water img {
+	max-width: 100%;
+}
+
+.container .design-section .japanese .design,
+ .container .fashion-section .water .fashion {
+	top:109px;
+	left:213px;
+}
+
+.container .fashion-section .water .fashion {
+	top:107px;
+}
+
+.row {
+	margin-top: 10px;
+}
+
+.row .elements {
+	display: inline-block;
+	position: relative;
+	width: 248px;
+}
+
+.row .margin-right {
+	margin-right: 8px;
+}
+
+.row .elements img {
+	width: 100%;
+}
+
+.row .info {
+	background-color: black;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 7px;
+	height: 60px;
+	width: 95%;
+}
+
+.row .info h4 {
+  line-height: normal !important;
+	overflow: hidden;
+	padding-bottom: 2px;
+	color:white !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  padding:5px 10px 0 5px;
+}
+
+.row .info span {
+	color:white !important;
+	padding:5px 10px 0 5px;
+	font-size: 14px;
+}
+
+.aside {
+	width: 29%;
+	float:right;
+	margin-top: 1.5%;
+}
+
+.aside input {
+	width: 80%;
+	padding: 5px;
+}
+
+.aside h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+  font-size: 23px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #333;
+  padding-top: 20px;
+}
+
+.aside .form {
+	width: 29%;
+}
+
+.aside button {
+	background-color: black;
+    border: none;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.fa {
+	font-size: 20px;
+	color: white;
+}
+
+.aside .outside {
+  background-color: white;
+  border-color: #e9ebee #dfe0e4 #d0d1d5;
+  border-radius: 2px;
+  padding: 10px;
+  box-shadow:rgb(181, 181, 181) 0px 1px 3px 0px;
+  border-color: rgb(158, 158, 158);
+  border-bottom-width: 4px;
+  border-style: solid;
+  border-left-width: 0.8px;
+  border-right-width: 0.8px;
+  border-top-width: 0.8px;
+  border-top-color: rgb(221, 221, 221);
+  border-left-color:rgb(221, 221, 221);
+  border-right-color: rgb(221, 221, 221);
+  margin-bottom: 30px;
+  padding-bottom: 70px;
+}
+
+.aside .outside .inside {
+  width: 100%;
+  position: relative;
+  background-color:rgb(246, 247, 249);
+}
+
+.aside .outside .inside .plezir {
+  height: 130px;
+  padding: 5px;
+}
+
+.aside .outside .inside .plezir img {
+  width: 100%;
+  height: auto;
+}
+
+.aside .outside .inside .plezir .shadow {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 100%);
+    height: 130px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.aside .outside .inside .likes {
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
+
+.aside .outside .inside .likes img {
+  border:1px solid white;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.aside .outside .inside .likes > div {
+  float:left;
+}
+
+.aside .outside .inside .likes a {
+  color:white;
+  font-family:Helvetica, Arial, sans-serif;
+  font-size:18px;
+  line-height: 24.444px;
+  margin-left: 5px;
+  text-shadow:rgba(0, 0, 0, 0.901961) 0px 2px 4px;
+}
+
+.aside .outside .inside .likes p {
+  color:white;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
+.aside .outside .inside .likes a:hover {
+  border-bottom: 3px solid white;
+}
+
+.aside .outside .inside .check {
+  position: absolute;
+  top:100px;
+  left: 9px;
+  background-color: white;
+  opacity: 1;
+  padding: 0 8px;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .12);
+}
+
+.aside .outside .inside .check .fa {
+  color: #90949c;
+}
+
+.aside .outside .inside .check a {
+  color: #90949c;
+  font-family:Helvetica, Arial, sans-serif;
+  line-height:22px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.aside .outside .inside .friends {
+  margin:5px;
+  background-color: white;
+  padding: 10px;
+  border-bottom-color:rgb(208, 209, 213);
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  border-left-color:rgb(223, 224, 228);
+  border-right-color:rgb(223, 224, 228);
+  border-top-color:rgb(233, 235, 238);
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  box-shadow:rgba(0, 0, 0, 0.117647) 0px 1px 2px 0px;
+}
+
+.aside .outside .inside .friends li {
+ display: inline-block;
+}
+
+.aside .outside .inside .friends li img {
+  width: 35px;
+  height: 35px;
+}
+
+.ostalo .life-style {
+	display: inline-block;
+	width: 33%;
+	position: relative;
+	margin: 2% 2% 2% 0%;
+}
+
+.ostalo .life-style .image {
+	overflow: hidden;
+	height: 224px;
+}
+
+.ostalo .life-style img {
+	max-width: 100%;
+}
+
+.button {
+	background-color: black;
+	text-transform: uppercase;
+	padding:10px;
+	position:absolute;
+}
+
+.ostalo .life-style .move {
+	background-color: black;
+	text-transform: uppercase;
+	padding:10px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.ostalo .life-style .header {
+	display: inline-block;
+	width: 100%;
+}
+
+.ostalo .life-style .header h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    line-height: 1.35em;
+    font-size:20.8px;
+}
+
+.ostalo .life-style .header a {
+	text-decoration: underline;
+	color:black;
+}
+
+.ostalo .life-style .header a:hover {
+	color: red;
+}
+
+.ostalo .life-style .header span {
+	color:#666;
+	font-size: 18px;
+}
+
+.footer {
+	background: #1d2124;
+	color:white;
+	width: 100%;
+	padding: 40px 0;
+	overflow: hidden;
+}
+
+.footer .parts {
+	width: 24%;
+	float:left;
+} 
+
+.footer .parts .button {
+	background-color: #999;
+	font-weight: bolder;
+	padding:0 5px;
+	margin-left: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.footer .margin-left-right {
+	margin:0 50px;
+}
+
+.footer .margin-left {
+	margin-left: 40px;
+}
+
+.footer .parts .link-first a {
+	background: #e00505;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px !important;
+    margin: 0 5px 15px 0;
+    padding: 0 5px;
+    color: white;
+    display: inline-block;
+}
+
+.footer .parts .link-first a:hover {
+	background-color: black;
+}
+
+.footer .parts .link-first,
+.footer .parts .link-second {
+	margin-top: 45px;
+}
+
+.footer .parts .link-third {
+	margin-top: 45px;
+}
+
+.footer .parts .link-second a {
+	display:block;
+	color: #e0e3e9;
+	font-size: 16px;
+	line-height: 27px;
+}
+
+.footer .parts .link-second a:hover {
+	text-decoration: underline;
+}
+
+.copy-right {
+	font-family:"Source Sans Pro", sans-serif;
+	display: inline-block;
+	text-align: left;
+	color: #8d8e92;
+	background-color: black;
+	width: 100%;
+	padding: 20px 0;
+	font-size: 13px;
+}
+
+.copy-right a {
+	color: #b6b7b9;
+	background-color: black;
+}
+
+.copy-right a:hover {
+	text-decoration: underline;
+}
+
+.copy-right ul li {
+	display: inline-block;
+	position: relative;
+	padding:0 5px;
+}
+
+.copy-right .social-network {
+	float:right;
+	margin-right: 30px;
+}
+
+.copy-right .social-network strong {
+	font-weight: normal;
+    position: absolute;
+    right: 20px;
+    top: -1px;
+    color: #fff;
+    opacity: 0;
+    padding: 3px;
+    z-index: 9999;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.copy-right .social-network strong:hover {
+	opacity: 1;
+    -webkit-transition-property: opacity, top;
+   	bottom:5px;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-property: opacity, top;
+    -moz-transition-duration: 300ms;
+    font-size: 16px;
+}
+
+.copy-right .social-network img {
+	width: 37px;
+}
