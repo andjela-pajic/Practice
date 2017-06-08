@@ -1,0 +1,135 @@
+@import url(main.css);
+body {
+  font-family: "Roboto", sans-serif; }
+
+.row {
+  margin: 50px auto; }
+
+.pink {
+  background-color: #FF1A71; }
+  .pink .navbar-nav a:hover {
+    border-bottom: 1px solid white; }
+
+.main {
+  background-image: url("../images/background-resize.jpg");
+  background-size: cover;
+  height: 629px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden; }
+  .main .fish {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    animation-timing-function: ease-in;
+    animation: moving 40s infinite;
+    top: 60px; }
+  .main .angry-fish {
+    width: 50px;
+    height: 30px;
+    top: 250px;
+    animation-delay: 40s;
+    position: absolute;
+    animation: angrymoving 20s infinite;
+    animation-timing-function: linear; }
+  .main .pretty-fish {
+    width: 50px;
+    height: 30px;
+    top: 450px;
+    position: absolute;
+    animation: prettymoving 60s infinite;
+    animation-timing-function: ease-in-out; }
+  .main h1 {
+    color: #fe039a;
+    margin-top: 150px;
+    font-weight: bold; }
+
+.navbar-inner i {
+  display: none; }
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 0 10px; }
+  .navbar a {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700; }
+    .navbar a:hover {
+      padding-bottom: 2.5px;
+      border-bottom: 2px solid #fe039a; }
+  .navbar .navbar-nav {
+    padding: 3px; }
+  .navbar .navbar-right {
+    margin: 0; }
+
+.nav li a:hover {
+  background-color: transparent; }
+
+.aboutme {
+  background-color: #FF1A71;
+  padding: 60px 0; }
+  .aboutme p {
+    font-size: 18px; }
+  .aboutme span {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px;
+    font-weight: 700; }
+
+.portfolio {
+  padding: 50px 0; }
+  .portfolio .work {
+    display: inline-block;
+    width: 22%;
+    position: relative;
+    margin-right: 20px; }
+  .portfolio img {
+    width: 100%; }
+  .portfolio .full-width {
+    width: 100%; }
+  .portfolio h3 {
+    color: #FF1A71; }
+
+.contact img {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px; }
+.contact a:visited {
+  color: #225f6f; }
+
+@media (max-width: 774px) {
+  .main h1 {
+    margin-top: 200px; }
+
+  .navbar-inner a i {
+    margin: 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    display: block; }
+
+  .menu {
+    width: 15%;
+    display: none;
+    text-align: center; }
+    .menu li a {
+      padding: 5px; }
+
+  .aboutme {
+    padding: 150px 0 60px 0; }
+
+  .portfolio {
+    padding: 130px 0; }
+    .portfolio .work {
+      margin-right: 0; }
+    .portfolio .full-img {
+      width: 100%; }
+      .portfolio .full-img img {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #fe039a; }
+
+  .contact img {
+    width: 40px;
+    height: 40px; } }
+
+/*# sourceMappingURL=final.css.map */
