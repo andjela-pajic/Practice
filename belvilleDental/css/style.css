@@ -170,15 +170,15 @@ ul {
  	background-color: white;
  }
 
-.mainContent .navigation .positionSecond .namestiSe  {
+.mainContent .navigation .positionSecond .play  {
 	text-align: right;
 }
 
-.mainContent .navigation .positionSecond .namestiSe a {
+.mainContent .navigation .positionSecond .play a {
 	color: #6a6b6e;
 }
 
-.mainContent .navigation .positionSecond .namestiSe a:hover {
+.mainContent .navigation .positionSecond .play a:hover {
 	color:black;
 }
 
@@ -211,7 +211,7 @@ ul {
 .wrapper .news .everything {
 	background: linear-gradient(#E7EDEF,#F5F7F8);
 	max-width:297px;
-	width: 100%;
+	width: 33%;
 	display: inline-block;
 	margin-bottom: 30px;
 }
@@ -345,11 +345,11 @@ footer .wrapper .footernav a {
 footer .wrapper .building {
 	position: absolute;
 	top: -128px;
-    right: 258px;
+    right: 45px;
 }
 
 footer .wrapper .footercontact {
-	margin-left: 65px;
+	margin-left: 150px;
 	font-size:11.25px;	
 }
 

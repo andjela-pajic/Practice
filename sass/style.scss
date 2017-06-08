@@ -135,9 +135,114 @@ body {
 		position: relative;
 		margin-right: 20px;
 	}
+	
+	.firstContainer {
+		position:relative;
+		display: block;
+		overflow: hidden;
+	}
 
-	img {
-		width: 100%;
+	a.overlay:hover img {
+		transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
+	}
+
+	.overlay {
+		position:relative;
+		text-decoration: none;
+		display: block;
+	}
+
+	.secondContainer {
+		position:absolute;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    text-align: left;
+	    padding-bottom: 2rem;
+	    z-index: 1;
+
+	    
+	}
+	
+	#effectFirst {
+		&:after {
+			background-color: rgb(245,234,236);
+		}
+	}
+	
+	#effectSecond {
+		&:after {
+			background-color: rgb(198,186,184);
+		}
+	}
+
+	#effectThird {
+		&:after {
+			background-color: rgb(241,222,199);
+		}
+	}
+
+	#effectFourth {
+		&:after {
+			background-color: rgb(235,234,235);
+		}
+	}
+
+	#effectFifth {
+		&:after {
+			background-color: rgb(216,204,207);
+		}
+	}
+
+
+	a.overlay {
+
+		p {
+	    	padding-left:20px;
+	    	font-size: 16px;
+	    	text-transform: uppercase;
+	    	color:#FF1A71;
+	    	transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
+	    	transform: translateX(0);
+	    	opacity: 0;
+	    }
+
+		&:after {
+			content: '';
+		    left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    position:absolute;
+		    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
+		    transform: scaleX(0);
+		    transform-origin: left center;
+		}
+	}
+
+	a.overlay:hover {
+
+		p {
+	    	padding-left:20px;
+	    	font-size: 16px;
+	    	text-transform: uppercase;
+	    	color:#FF1A71;
+	    	transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
+	    	transform: translateX(1);
+	    	opacity: 1;
+	    }
+
+		&:after {
+			content: '';
+		    left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    position:absolute;
+		    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
+		    transform: scaleX(1);
+		    transform-origin: left center;
+		}
 	}
 
 	.full-width {

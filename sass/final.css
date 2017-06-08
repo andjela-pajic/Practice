@@ -82,8 +82,70 @@ body {
     width: 22%;
     position: relative;
     margin-right: 20px; }
-  .portfolio img {
-    width: 100%; }
+  .portfolio .firstContainer {
+    position: relative;
+    display: block;
+    overflow: hidden; }
+  .portfolio a.overlay:hover img {
+    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03); }
+  .portfolio .overlay {
+    position: relative;
+    text-decoration: none;
+    display: block; }
+  .portfolio .secondContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding-bottom: 2rem;
+    z-index: 1; }
+  .portfolio #effectFirst:after {
+    background-color: #f5eaec; }
+  .portfolio #effectSecond:after {
+    background-color: #c6bab8; }
+  .portfolio #effectThird:after {
+    background-color: #f1dec7; }
+  .portfolio #effectFourth:after {
+    background-color: #ebeaeb; }
+  .portfolio #effectFifth:after {
+    background-color: #d8cccf; }
+  .portfolio a.overlay p {
+    padding-left: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FF1A71;
+    transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
+    transform: translateX(0);
+    opacity: 0; }
+  .portfolio a.overlay:after {
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
+    transform: scaleX(0);
+    transform-origin: left center; }
+  .portfolio a.overlay:hover p {
+    padding-left: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FF1A71;
+    transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
+    transform: translateX(1);
+    opacity: 1; }
+  .portfolio a.overlay:hover:after {
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
+    transform: scaleX(1);
+    transform-origin: left center; }
   .portfolio .full-width {
     width: 100%; }
   .portfolio h3 {
