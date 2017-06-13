@@ -27,37 +27,37 @@ body {
 .main {
 		background-image: url('../images/background-resize.jpg');
 		background-size: cover;
-		height: 629px;
+		height: 638px;
 		background-color: #fff;
 		position: relative;
 		overflow: hidden;
 
 		.fish {
-		width: 50px;
-		height: 30px;
-		position:absolute;
-		animation-timing-function: ease-in;
-		animation: moving 40s infinite;
-		top:60px;
+			width: 50px;
+			height: 30px;
+			position:absolute;
+			animation-timing-function: ease-in;
+			animation: moving 40s infinite;
+			top:60px;
 		}
 
 		.angry-fish {
-		width: 50px;
-		height: 30px;
-		top:250px;
-		animation-delay: 40s;
-		position:absolute;
-		animation: angrymoving 20s infinite;
-		animation-timing-function: linear;
+			width: 50px;
+			height: 30px;
+			top:250px;
+			animation-delay: 40s;
+			position:absolute;
+			animation: angrymoving 20s infinite;
+			animation-timing-function: linear;
 		}
 
 		.pretty-fish {
-		width: 50px;
-		height: 30px;
-		top:450px;
-		position:absolute;
-		animation: prettymoving 60s infinite;
-		animation-timing-function: ease-in-out;
+			width: 50px;
+			height: 30px;
+			top:450px;
+			position:absolute;
+			animation: prettymoving 60s infinite;
+			animation-timing-function: ease-in-out;
 		}
 
 		h1 {
@@ -142,16 +142,6 @@ body {
 		overflow: hidden;
 	}
 
-	a.overlay:hover img {
-		transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
-	}
-
-	.overlay {
-		position:relative;
-		text-decoration: none;
-		display: block;
-	}
-
 	.secondContainer {
 		position:absolute;
 	    bottom: 0;
@@ -160,10 +150,8 @@ body {
 	    text-align: left;
 	    padding-bottom: 2rem;
 	    z-index: 1;
-
-	    
 	}
-	
+
 	#effectFirst {
 		&:after {
 			background-color: rgb(245,234,236);
@@ -190,12 +178,21 @@ body {
 
 	#effectFifth {
 		&:after {
-			background-color: rgb(216,204,207);
+			background-color: black;
+			opacity: 0.5;
 		}
 	}
 
+	.overlay {
+		position:relative;
+		text-decoration: none;
+		display: block;
 
-	a.overlay {
+		&:hover {
+			img {
+				transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
+			}
+		}
 
 		p {
 	    	padding-left:20px;
@@ -207,7 +204,7 @@ body {
 	    	opacity: 0;
 	    }
 
-		&:after {
+	    &:after {
 			content: '';
 		    left: 0;
 		    right: 0;
@@ -218,21 +215,43 @@ body {
 		    transform: scaleX(0);
 		    transform-origin: left center;
 		}
+
+		&:hover {
+			p {
+		    	transform: translateX(1);
+		    	opacity: 1;
+	    	}
+
+			&:after {
+				    transform: scaleX(1);
+			}
+		}
 	}
 
-	a.overlay:hover {
+.overlay_5 {
+		position:relative;
+		text-decoration: none;
+		display: block;
+
+		&:hover {
+			img {
+				transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
+			}
+		}
 
 		p {
-	    	padding-left:20px;
-	    	font-size: 16px;
+	    	text-align: center;
+	    	font-size: 26px;
+	    	font-weight: bold;
+	    	margin:170px auto;
 	    	text-transform: uppercase;
 	    	color:#FF1A71;
 	    	transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
-	    	transform: translateX(1);
-	    	opacity: 1;
+	    	transform: translateX(0);
+	    	opacity: 0;
 	    }
 
-		&:after {
+	    &:after {
 			content: '';
 		    left: 0;
 		    right: 0;
@@ -240,13 +259,24 @@ body {
 		    bottom: 0;
 		    position:absolute;
 		    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
-		    transform: scaleX(1);
-		    transform-origin: left center;
+		    transform: scaleX(0);
+		}
+
+		&:hover {
+			p {
+	    	transform: translateX(1);
+	    	opacity: 1;
+	    	}
+
+			&:after {
+			    transform: scaleX(1);
+			}
 		}
 	}
 
 	.full-width {
 		width: 100%;
+		margin-top: 20px;
 	}
 	
 	h3 {
@@ -263,6 +293,32 @@ body {
 
 	a:visited {
 		color:#225f6f;
+	}
+
+	li {
+		position:relative;
+		list-style-type: none;
+		display: inline-block;
+	
+		strong {
+			opacity: 0;
+			bottom: 45px;
+	    	left: -50px;
+			position:absolute;
+			color:#05adda;
+			font-weight: normal;
+			font-size: 12px;
+			text-decoration: none;
+		}
+	}
+
+	.mail {
+		&:hover {
+			strong {
+				opacity: 1;
+			}
+		}
+		
 	}
 }
 
@@ -305,22 +361,24 @@ body {
 
 
 	.portfolio {
+
 		padding:130px 0;
 
 		.work {
 			margin-right: 0;
 		}
-		
+
 		.full-img {
 			width: 100%;
-		 img {
-			width: 100%;
-			margin-bottom: 30px;
-			padding-bottom:30px;
-			border-bottom:2px solid $main-color;
+
+			 img {
+				width: 100%;
+				margin-bottom: 30px;
+				padding-bottom:30px;
+				border-bottom:2px solid $main-color;
+			}
 		}
 	}
-}
 
 	.contact {
 		img {

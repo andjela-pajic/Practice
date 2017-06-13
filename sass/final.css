@@ -13,7 +13,7 @@ body {
 .main {
   background-image: url("../images/background-resize.jpg");
   background-size: cover;
-  height: 629px;
+  height: 638px;
   background-color: #fff;
   position: relative;
   overflow: hidden; }
@@ -86,12 +86,6 @@ body {
     position: relative;
     display: block;
     overflow: hidden; }
-  .portfolio a.overlay:hover img {
-    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03); }
-  .portfolio .overlay {
-    position: relative;
-    text-decoration: none;
-    display: block; }
   .portfolio .secondContainer {
     position: absolute;
     bottom: 0;
@@ -109,45 +103,70 @@ body {
   .portfolio #effectFourth:after {
     background-color: #ebeaeb; }
   .portfolio #effectFifth:after {
-    background-color: #d8cccf; }
-  .portfolio a.overlay p {
-    padding-left: 20px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #FF1A71;
-    transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
-    transform: translateX(0);
-    opacity: 0; }
-  .portfolio a.overlay:after {
-    content: '';
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
-    transform: scaleX(0);
-    transform-origin: left center; }
-  .portfolio a.overlay:hover p {
-    padding-left: 20px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #FF1A71;
-    transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
-    transform: translateX(1);
-    opacity: 1; }
-  .portfolio a.overlay:hover:after {
-    content: '';
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
-    transform: scaleX(1);
-    transform-origin: left center; }
+    background-color: black;
+    opacity: 0.5; }
+  .portfolio .overlay {
+    position: relative;
+    text-decoration: none;
+    display: block; }
+    .portfolio .overlay:hover img {
+      transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03); }
+    .portfolio .overlay p {
+      padding-left: 20px;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #FF1A71;
+      transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
+      transform: translateX(0);
+      opacity: 0; }
+    .portfolio .overlay:after {
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
+      transform: scaleX(0);
+      transform-origin: left center; }
+    .portfolio .overlay:hover p {
+      transform: translateX(1);
+      opacity: 1; }
+    .portfolio .overlay:hover:after {
+      transform: scaleX(1); }
+  .portfolio .overlay_5 {
+    position: relative;
+    text-decoration: none;
+    display: block; }
+    .portfolio .overlay_5:hover img {
+      transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03); }
+    .portfolio .overlay_5 p {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      margin: 170px auto;
+      text-transform: uppercase;
+      color: #FF1A71;
+      transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
+      transform: translateX(0);
+      opacity: 0; }
+    .portfolio .overlay_5:after {
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
+      transform: scaleX(0); }
+    .portfolio .overlay_5:hover p {
+      transform: translateX(1);
+      opacity: 1; }
+    .portfolio .overlay_5:hover:after {
+      transform: scaleX(1); }
   .portfolio .full-width {
-    width: 100%; }
+    width: 100%;
+    margin-top: 20px; }
   .portfolio h3 {
     color: #FF1A71; }
 
@@ -157,6 +176,21 @@ body {
   height: 50px; }
 .contact a:visited {
   color: #225f6f; }
+.contact li {
+  position: relative;
+  list-style-type: none;
+  display: inline-block; }
+  .contact li strong {
+    opacity: 0;
+    bottom: 45px;
+    left: -50px;
+    position: absolute;
+    color: #05adda;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: none; }
+.contact .mail:hover strong {
+  opacity: 1; }
 
 @media (max-width: 774px) {
   .main h1 {

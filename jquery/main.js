@@ -16,8 +16,8 @@ $(window).load(function(){
 
 	$(window).scroll(navbarHandler);
 	$('.navbar-inner > a > i').on( 'click', function(){
-    $('.menu').toggle();
-});
+    	$('.menu').toggle();
+	});
 });
 
 
