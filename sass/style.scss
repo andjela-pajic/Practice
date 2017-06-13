@@ -29,7 +29,7 @@ body {
 .main {
 		background-image: url('../images/background-resize.jpg');
 		background-size: cover;
-		height: 638px;
+		height: 850px;
 		background-color: #fff;
 		position: relative;
 		overflow: hidden;
@@ -66,6 +66,7 @@ body {
 			color:$main-color;
 			margin-top: 150px;
 			font-weight: bold;
+			font-size: 26px;
 		}
 }
 

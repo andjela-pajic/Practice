@@ -3,17 +3,17 @@
 /*# sourceMappingURL=main.css.map */
 @keyframes moving {
 	from {right: 0px;}
-    to {right: 1450px;}
+    to {right: 1850px;}
 }
 
 @keyframes angrymoving {
 	from {left: -350px;}
-    to {left: 1450px;}
+    to {left: 1850px;}
 }
 
 @keyframes prettymoving {
 	from {right: -250px;}
-    to {right: 1450px;}
+    to {right: 1850px;}
 }
 
 
