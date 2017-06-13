@@ -1,6 +1,7 @@
 @import url(main.css);
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
 
 .row {
   margin: 50px auto; }
@@ -167,6 +168,8 @@ body {
   .portfolio .full-width {
     width: 100%;
     margin-top: 20px; }
+    .portfolio .full-width img {
+      width: 100%; }
   .portfolio h3 {
     color: #FF1A71; }
 
@@ -182,12 +185,12 @@ body {
   display: inline-block; }
   .contact li strong {
     opacity: 0;
-    bottom: 45px;
-    left: -50px;
+    bottom: 55px;
+    left: -70px;
     position: absolute;
     color: #05adda;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none; }
 .contact .mail:hover strong {
   opacity: 1; }
