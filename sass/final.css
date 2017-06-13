@@ -44,7 +44,7 @@ body {
     color: #fe039a;
     margin-top: 150px;
     font-weight: bold;
-    font-size: 26px; }
+    font-size: 56px; }
 
 .navbar-inner i {
   display: none; }
@@ -198,7 +198,8 @@ body {
 
 @media (max-width: 774px) {
   .main h1 {
-    margin-top: 200px; }
+    margin-top: 200px;
+    font-size: 46px; }
 
   .navbar-inner a i {
     margin: 10px;
@@ -211,7 +212,8 @@ body {
     display: none;
     text-align: center; }
     .menu li a {
-      padding: 5px; }
+      padding: 5px;
+      text-align: center; }
 
   .aboutme {
     padding: 150px 0 60px 0; }
