@@ -88,6 +88,7 @@ body {
 		&:hover {
 			padding-bottom: 2.5px;
 			border-bottom: 2px solid #fe039a;
+			cursor: pointer;
 		}
 	}
 
@@ -129,7 +130,15 @@ body {
 }
 
 .portfolio {
-	padding:50px 0;
+  .sites {
+		background: #f7f7f7;
+		padding-top: 50px;
+		h2 {
+			margin: 0;
+		}
+	}
+
+
 	.work {
 		display: inline-block;
 		width: 22%;
@@ -140,6 +149,20 @@ body {
 			color:#FF1A71;
 			font-size: 22px;
 			padding: 10px 0;
+
+			&:hover {
+				.underline {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+	.responsiveSites {
+		&:hover {
+			.underline {
+				text-decoration: underline;
+			}
 		}
 	}
 
@@ -155,7 +178,7 @@ body {
     left: 0;
     right: 0;
     text-align: left;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
     z-index: 1;
 	}
 
@@ -221,6 +244,7 @@ body {
 		    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
 		    transform: scaleX(0);
 		    transform-origin: left center;
+				margin-bottom: 50px;
 		}
 
 		&:hover {
@@ -267,6 +291,7 @@ body {
 		    position:absolute;
 		    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03);
 		    transform: scaleX(0);
+				margin-bottom: 50px;
 		}
 
 		&:hover {
@@ -283,7 +308,6 @@ body {
 
 	.full-width {
 		width: 100%;
-		margin-top: 20px;
 		img {
 			width: 100%;
 		}
@@ -300,7 +324,7 @@ body {
 }
 
 .contact {
-	background-color: rgb(235,234,235);
+	background-color: #f7f7f7;
 	padding-top: 20px;
 	margin-top: 20px;
 	h2 {
@@ -356,10 +380,6 @@ body {
 			font-size: 46px;
 		}
 
-		.navbar-nav > li {
-			text-align: center;
-		}
-
 		.navbar-inner {
 			a {
 				i {
@@ -374,24 +394,23 @@ body {
 
 
 	.menu {
-			width: 15%;
+			width: 100px;
 			display: none;
-			text-align: center;
 		li {
 			a {
 				padding:5px;
-				text-align: center;
+				text-align: left;
 			}
 		}
 	}
 
 	.aboutme {
-		padding:150px 0;
+		padding: 7vw 0;
 	}
 
 
 	.portfolio {
-		padding:150px 0 0;
+
 		.work {
 			margin-right: 1%;   /*promenjeno sa 0 na 1*/
 			width: 48%;					/*doadto*/
@@ -437,7 +456,6 @@ body {
 		}
 	.navbar {
 		a {
-		 font-weight: 400;
 			&:hover {
 				border-bottom: none;
 			}
@@ -456,7 +474,7 @@ body {
 	}
 }
 	.aboutme {
-		padding: 125px 0;
+		padding: 7vw 0;
 		p {
 			font-size: 18px
 		}
@@ -471,7 +489,7 @@ body {
 		}
 	}
 	.portfolio {
-		padding:120px 0;
+
 		.work {
 			margin-right: 0;
 			width: 100%;

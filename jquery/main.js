@@ -2,7 +2,7 @@ function navbarHandler(){
 	var scrollTop = $(window).scrollTop();
 	var $nav = $('nav');
 	var backgroundClass = 'pink';
-	if (scrollTop > 574) {
+	if (scrollTop > 10) {
 		$nav.addClass(backgroundClass);
 	} else {
 		$nav.removeClass(backgroundClass);
@@ -14,7 +14,11 @@ function navbarHandler(){
 $(window).load(function(){
 	navbarHandler();
 
-	$(window).scroll(navbarHandler);
+	$(window).scroll(navbarHandler).resize(function(){
+		if (window.innerWidth > 960) {
+			$('.menu').show();
+		}
+	});
 	$('.navbar-inner > a > i').on( 'click', function(){
     	$('.menu').toggle();
 	});
