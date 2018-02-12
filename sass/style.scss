@@ -22,7 +22,7 @@ body {
 			}
 		}
 	}
-	
+
 }
 
 
@@ -117,7 +117,7 @@ body {
 	padding:60px 0;
 
 	p {
-		font-size: 18px;
+		font-size: 22px;  /*menjano sa 18 na 22px*/
 	}
 
 	span {
@@ -125,20 +125,24 @@ body {
 		font-size: 22px;
 		font-weight: 700;
 
-		}
-
+	}
 }
 
 .portfolio {
 	padding:50px 0;
-
 	.work {
 		display: inline-block;
 		width: 22%;
 		position: relative;
 		margin-right: 20px;
+		margin-bottom: 20px;
+		a {
+			color:#FF1A71;
+			font-size: 22px;
+			padding: 10px 0;
+		}
 	}
-	
+
 	.firstContainer {
 		position:relative;
 		display: block;
@@ -147,12 +151,12 @@ body {
 
 	.secondContainer {
 		position:absolute;
-	    bottom: 0;
-	    left: 0;
-	    right: 0;
-	    text-align: left;
-	    padding-bottom: 2rem;
-	    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding-bottom: 2rem;
+    z-index: 1;
 	}
 
 	#effectFirst {
@@ -160,7 +164,7 @@ body {
 			background-color: rgb(245,234,236);
 		}
 	}
-	
+
 	#effectSecond {
 		&:after {
 			background-color: rgb(198,186,184);
@@ -246,7 +250,7 @@ body {
 	    	text-align: center;
 	    	font-size: 26px;
 	    	font-weight: bold;
-	    	margin:170px auto;
+	    	margin:300px auto;
 	    	text-transform: uppercase;
 	    	color:#FF1A71;
 	    	transition: transform 0.4s cubic-bezier(0, 0, 0, 0.85), opacity 0.2s linear;
@@ -283,14 +287,25 @@ body {
 		img {
 			width: 100%;
 		}
+		a {
+			color:#FF1A71;
+			font-size: 22px;
+			padding: 20px 0;
+		}
 	}
-		
-	h3 {
+
+	h2 {
 		color:#FF1A71;
 	}
 }
 
 .contact {
+	background-color: rgb(235,234,235);
+	padding-top: 20px;
+	margin-top: 20px;
+	h2 {
+		color:#FF1A71;
+	}
 	img {
 		margin:0 auto;
 		width: 50px;
@@ -305,7 +320,7 @@ body {
 		position:relative;
 		list-style-type: none;
 		display: inline-block;
-	
+
 		strong {
 			opacity: 0;
 			bottom: 55px;
@@ -324,20 +339,23 @@ body {
 				opacity: 1;
 			}
 		}
-		
+	}
+	.row {
+		padding:50px 0;
+		margin:0;
 	}
 }
 
 
 
-@media (max-width: 774px) {
+@media (min-width:640px) and ( max-width: 960px) {  /*promenjeno sa 774 na 800*/
 
 	.main {
 		h1 {
 			margin-top: 200px;
 			font-size: 46px;
 		}
-	
+
 		.navbar-nav > li {
 			text-align: center;
 		}
@@ -368,26 +386,30 @@ body {
 	}
 
 	.aboutme {
-		padding:150px 0 60px 0;
+		padding:150px 0;
 	}
 
 
 	.portfolio {
-
-		padding:130px 0;
-
+		padding:150px 0 0;
 		.work {
-			margin-right: 0;
+			margin-right: 1%;   /*promenjeno sa 0 na 1*/
+			width: 48%;					/*doadto*/
 		}
 
 		.full-img {
-			width: 100%;
+			width: 48%;     /*promenjeno sa 100 na 48*/
 
 			 img {
 				width: 100%;
 				margin-bottom: 30px;
 				padding-bottom:30px;
 				border-bottom:2px solid $main-color;
+			}
+		}
+		.overlay_5 {
+			p {
+				margin:80px auto;
 			}
 		}
 	}
@@ -399,4 +421,68 @@ body {
 		}
 	}
 
+}
+
+@media (max-width: 640px) {
+	.main {
+		.navbar-inner {
+			a {
+				i {
+					margin: 10px;
+			    font-size: 20px;
+			    color: rgba(255, 255, 255, 0.7);
+			    display: block;
+				}
+			}
+		}
+	.navbar {
+		a {
+		 font-weight: 400;
+			&:hover {
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.menu {
+		width: 50%;
+		display: none;
+	li {
+		a {
+			padding:5px;
+			text-align: left;
+		}
+	}
+}
+	.aboutme {
+		padding: 125px 0;
+		p {
+			font-size: 18px
+		}
+		 h2 {
+			font-size: 26px;
+		}
+		.overlay_5 {
+			p {
+				margin: 60px auto;
+				font-size: 22px;
+			}
+		}
+	}
+	.portfolio {
+		padding:120px 0;
+		.work {
+			margin-right: 0;
+			width: 100%;
+		}
+		.full-img {
+			width: 100%;
+		}
+		.overlay_5 {
+			p {
+				margin:50px auto;
+			}
+		}
+	}
 }
