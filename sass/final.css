@@ -65,7 +65,7 @@ body {
   .navbar .navbar-right {
     margin: 0; }
 
-.nav li a:hover {
+.nav li a:hover, .nav li a:active, .nav li a:focus {
   background-color: transparent; }
 
 .aboutme {

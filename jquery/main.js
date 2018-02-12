@@ -19,8 +19,25 @@ $(window).load(function(){
 			$('.menu').show();
 		}
 	});
+
+	//hamburger menu
 	$('.navbar-inner > a > i').on( 'click', function(){
     	$('.menu').toggle();
+	});
+
+  //scroll effect
+	$('#home').find('.navbar-nav').find('a').click(function(event){
+		event.preventDefault();
+		var id = event.currentTarget.getAttribute("href");
+    var elementFromTop = $(id).offset().top;
+		var heightOfNavBar = $('.navbar').height();
+    var scrollTo = elementFromTop - heightOfNavBar;
+
+		$('html, body').animate({
+			 scrollTop: scrollTo
+	  }, 500);
+
+
 	});
 });
 

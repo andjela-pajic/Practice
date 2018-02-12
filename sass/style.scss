@@ -105,7 +105,7 @@ body {
 .nav {
 	li {
 		a {
-			&:hover {
+			&:hover, &:active, &:focus {
 			background-color: transparent;
 			}
 		}
@@ -157,7 +157,7 @@ body {
 			}
 		}
 	}
-	
+
 	.responsiveSites {
 		&:hover {
 			.underline {
