@@ -107,6 +107,7 @@
 
   .portfolio, .skills {
     background-attachment: initial;
+    background-size: initial;
   }
 }
 
