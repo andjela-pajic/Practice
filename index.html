@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+  <title>Don't be a prick</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+
+  <!-- css styles -->
+  <link rel="styleSheet" type="text/css" href="css/normalize.css"> <!-- normalize -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">  <!-- google fonts -->
+  <link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome-all.css">  <!--fontawesome -->
+  <link rel="styleSheet" type="text/css" href="css/style.css">      <!-- css -->
+  <link rel="styleSheet" type="text/css" href="css/responsive.css">  <!-- responsive style -->
+  <link rel="styleSheet" type="text/css" href="css/animate.css">   <!-- animation -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="Anonymous"></script>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+ </script>
+ <script src="js/picturefill.min.js"></script>
+</head>
+<!-- <picture>
+  <source srcset="images/background1200.jpg" media="(min-width: 1200px)">
+    <source srcset="images/background800.jpg" media="(min-width: 800px)">
+    <img src="images/background320.jpg" alt="Merilee Wilbur, with her favorite rolling pin.">
+</picture> -->
+<body>
+  <section id="home" class="homeSection">
+    <header>
+      <div class="logo">
+        <img src="images/logo_cactus.png" alt="logo" />
+        <!-- <h1>Don't be a prick</h1> -->
+      </div>
+      <nav class="animated fadeInRight clearfix">
+        <div class="menuButton">
+            <a><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="arrow">
+      <a href="#aboutme"><i class="far fa-arrow-circle-down animated infinite tada"></i></a>
+    </div>
+  </section>
+  <section id="aboutme" class="aboutme">
+    <h2 class="text-center">About me</h2>
+    <div class="greetings text-center">
+      <h3>HI,</h3>
+      <p>I'm Anđela, welcome to my website!</p>
+      <p>I'm self–taught webdeveloper with HTML/CSS and Javascript skills.</p>
+      <p>If you think that we can cooperate, please contact me for any kind of job,</p>
+      <p>internship or side project.</p>
+    </div>
+  </section>
+  <section id="portfolio" class="portfolio">
+    <h2 class="text-center">Responsive website</h2>
+    <div class="portfolioBig">
+      <a class="grow" href="http://www.stomatologijanovibeograd.rs/" target="_blank">
+        <figure>
+          <img src="images/corporate.jpg" alt="Corporate website">
+          <figcaption>Corporate website</figcaption>
+        </figure>
+      </a>
+      <a class="grow" href="http://www.stomatologijanovibeograd.rs/" target="_blank">
+        <figure>
+          <img src="images/lukovac.jpg" alt="Lukovac website">
+          <figcaption>Dr Lukovac website</figcaption>
+        </figure>
+      </a>
+      	<a class="grow" href="https://andjela-pajic.github.io/Startit-kurs-domaci/Osmi%20cas/" target="_blank">
+          <figure>
+            <img src="images/sphinx.jpg" alt="Sphinx website">
+            <figcaption>Sphinx website</figcaption>
+          </figure>
+        </a>
+    </div>
+    <h2 class="text-center">Recreating existing websites (desktop version)</h2>
+    <div class="portfolioSmall">
+      <div class="thumbnail">
+        <a class="grow" href="https://andjela-pajic.github.io/Startit-kurs-domaci/deveti%20cas/" target="_blank">
+          <figure>
+            <img src="images/slack.jpg" alt="Slack website">
+            <figcaption>Slack website</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="thumbnail">
+        <a class="grow" href="https://andjela-pajic.github.io/Practice/belvilleDental/" target="_blank">
+          <figure>
+            <img src="images/belvilledental.jpg" alt="Belvilledental website">
+            <figcaption>Belvilledental website</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="thumbnail">
+        <a class="grow" href="https://andjela-pajic.github.io/Practice/codeschool/" target="_blank">
+          <figure>
+            <img src="images/codeschool.jpg" alt="Codeschool website">
+            <figcaption>Codeschool website</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="thumbnail">
+        <a class="grow" href="https://andjela-pajic.github.io/Practice/plezir/" target="_blank">
+          <figure>
+            <img src="images/plezir.jpg" alt="Plezir website">
+            <figcaption>Plezir website</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="skills">
+    <h2 class="text-center">My skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>jQuery</li>
+      <li>Javascript</li>
+      <li>SASS</li>
+      <li>Bootstrap</li>
+      <li>Git</li>
+    </ul>
+  </section>
+  <section id="contact" class="contact">
+    <h2 class="text-center">Contact</h2>
+    <div class="text-center social">
+      <a class="github" href="https://github.com/andjela-pajic/" target="_blank"><img src="images/cactus-github.png" alt="github"/><span>Github</span></a>
+      <a class="linkedin" href="https://www.linkedin.com/in/andjelapajic/" target="_blank"><img src="images/cactus-gmail.png" alt="linkedin"/><span>LinkedIn</span></a>
+      <a class="mail" href="mailto:andjela.pajic90@gmail.com" target="_blank"><img src="images/cactus-linkedin.png" alt="mail"/><span>andjela.pajic90@gmail.com</span></a>
+    </div>
+  </section>
+  <script type="text/javascript" src="js/main.js"></script> <!-- main.js -->
+</body>
+</html>
