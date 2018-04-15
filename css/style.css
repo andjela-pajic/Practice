@@ -90,10 +90,6 @@ header .logo img {
   height: 145px;
 }
 
-header h1 {
-  display: inline-block;
-}
-
 header nav {
   float: right;
   font-weight: bold;
