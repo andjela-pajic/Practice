@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAIA,EAAG;EACF,KAAK,EAHU,OAAO;EAItB,UAAU,EAAE,KAAK;EACjB,WAAW,EAAE,IAAI;;AAGlB,KAAM;EACL,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,IAAI;EACnB,aAAa,EAAE,IAAI;EAEnB,SAAI;IACH,MAAM,EAAC,IAAI;IACX,KAAK,EAAE,IAAI",
-"sources": ["style.scss"],
-"names": [],
-"file": "yest.css"
-}
