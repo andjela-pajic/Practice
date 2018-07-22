@@ -166,6 +166,22 @@ header nav ul li a:hover {
 
 /* end of about me section */
 
+/* Skills section */
+
+.skills {
+  background-image: url(../images/turquoise-pink.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.skills ul li {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 5em;
+}
+
+/* end of skills section */
+
 /* Portfolio section */
 .portfolio {
   background-image: url(../images/cactus_pink1.jpg);
@@ -231,21 +247,6 @@ header nav ul li a:hover {
   transform: scale(1.02);
 }
 /* end of portfolio section */
-
-/* Skills section */
-
-.skills {
-  background-image: url(../images/turquoise-pink.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.skills ul li {
-  text-align: center;
-  font-size: 1.5em;
-  line-height: 3em;
-}
-/* end of skills section */
 
 /* Contact section */
 .contact a {
